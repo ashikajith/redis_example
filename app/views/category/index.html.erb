@@ -1,0 +1,16 @@
+
+<h1>
+  Category Listing
+</h1>
+<ul id="categories">
+  <% @categories.each do |cat| %>
+    <li>
+      <h3>
+        <%= cat['name'] %>
+      </h3>
+      <p>
+        <%= cat['desc'] %>
+      </p>
+    </li>
+  <% end %>
+</ul>
